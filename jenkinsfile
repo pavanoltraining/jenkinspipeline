@@ -1,6 +1,5 @@
 node
 {
-pipeline{
 agent any
 stages
 {
@@ -18,4 +17,4 @@ echo "Deploying the Project.........."
 }
 }
 }
-}
+
