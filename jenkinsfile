@@ -5,19 +5,19 @@ stages
 stage('Build') 
 {
 steps{
-echo "Building the Project.........."
+echo "Harshit Building the Project.........."
 }
 }
 stage('Test') 
 {
 steps{
-echo "Testing the Project.........."
+echo "Harshit Testing the Project.........."
 }
 }
 stage('Deploy') 
 {
 steps{
-echo "Deploying the Project.........."
+echo "Harshit Deploying the Project.........."
 }
 }
 }
