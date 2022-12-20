@@ -1,24 +1,28 @@
+
+//declarative peipeline
+
 pipeline{
-agent any
-stages 
-{
-stage('Build') 
-{
-steps{
-echo "Building the Project.........."
+    agent any
+    stages {
+  stage('build') {
+    steps {
+         echo 'Biding...'
+    }
+  }
+
+  stage('test') {
+    steps {
+     echo 'Testing....'
+    }
+  }
+
+  stage('deploy') {
+    steps {
+      echo 'Deploying...'
+      echo 'Done.....!!!!'
+    }
+  }
+
 }
-}
-stage('Test') 
-{
-steps{
-echo "Testing the Project.........."
-}
-}
-stage('Deploy') 
-{
-steps{
-echo "Deploying the Project.........."
-}
-}
-}
+
 }
